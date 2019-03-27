@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
     <title>PPRL GitHub | Open Source Privacy Preserving Record Linkage</title>
@@ -9,13 +10,137 @@
 
     <!-- Description -->
       <meta name="description" content="We are excited to bring the open source patient data linkage tools.">
+	  <style>
+	  
+		li 		{
+					line-height: 150%;
+				}
+		
+		h1		{
+					font-size: 72pt;
+					font-family: Calibri;
+					line-height: 10%; <!--stops page title from having so much top and bottom padding-->
+				}
+	  
+		body	{
+					background-image: url("city1.jpg");
+					background-repeat: no-repeat;
+					background-position: right top;
+					background-attachment: fixed;
+					background-size: 100% 100%;
+					font-size: 100%;
+				}
+		
+		div		{
+					background-color: white;
+					opacity: 0.95;
+					padding: 1%;
+					margin: 2%;
+					font-family: Arial;
+					font-size: 1em;
+				}
+		.orangeboxholder	{
+								max-width: 100%;
+								margin: auto;
+								text-align: center;
+							}
+		.orangebox { 
+					  margin: auto;
+					  display: inline-block;
+					  background-color: gold;
+					  width: 25%;
+					  padding: 1%;
+					  margin: 1%;
+					  text-align: center;
+					  border: solid darkorange 2px;
+					  border-radius: 7px;
+					  font-family: Arial;
+					  font-size: 1.125em;
+					  font-weight: bold;
+					}
+		
+		.midbox		{
+						border: solid grey 4px;
+						border-radius: 7px;
+						background-color: gainsboro;
+						padding: 0% 1% 0% 1%;
+						margin: 0%;
+					}
+		
+		.greyboxholder	{
+							max-width: 100%;
+							margin: auto;
+							text-align: center;
+						}
+		.greybox { 
+					  margin: auto;
+					  display: inline-block;
+					  background-color: gold;
+					  width: 25%;
+					  padding: 1%;
+					  margin: 1%;
+					  text-align: center;
+					  border: solid darkorange 2px;
+					  border-radius: 7px;
+					  font-family: Arial;
+					  font-size: 18t;
+					  font-weight: bold;
+					}
+	  
+	  </style>
   </head>
 </html>
 
 <html>
 <body>
-Hello world
+<div>
+	<h1>Linkja</h1>
+
+	Linkja is a data linkage application that is designed to disambiguate patients across sites / health systems, with minimal risk from transferring PHI. This is accomplished by hashing the patient identifiers with a secured salt and hashing algorithm.<br><br> The main components of the application are:<br>
+
+	<!-- ORIGINAL LIST BELOW
+	<ol>
+		<li>Salt engine</li>
+		<li>Data Standardization, exceptions, and hashing</li>
+		<li>Disambiguation / matching</li>
+	</ol>
+	-->
+
+	<div class="orangeboxholder">
+		<div class="orangebox">Salt engine</div>
+		<div class="orangebox">Data Standardization, exceptions, and hashing</div>
+		<div class="orangebox">Disambiguation / matching</div>
+	</div>
+
+	<div class="midbox">
+		<p>Each component is explained in more detail below:</p>
+
+		<ol>
+		<li>Web interface for Project, User and Key management - This component is designed to manage project specific Salt distribution. It allows the project managers to create projects, add users and authenticate the users. The authenticated users upload their RSA public keys and download the encrypted Salt file.</li>
+		<li>Data Standardization, exceptions, and hashing - This component includes a data pipeline to digest and validate the data, standardize the data, manage data exceptions, create composite variables from patient identifiers and hash using SHA512 algorithm and Salt</li>
+		<li>Disambiguation / matching - This component allows the aggregator to merge files, disambiguate the hashes and assign Universal patient ID to matching patients</li>
+		</ol>
+	</div>
+
+	<p>The data linkage application is designed to disambiguate patients across or within sites e.g.: health systems, public health records, criminal justice system etc.  Securely generating and distributing salt and hashing the patient records with secured salt can mitigate the risk from transferring PHI. There are 3 main modules for hashing and disambiguating patients across multiple sites:</p>
+
+	<ol>
+	<li><b>Salt engine and project, user and key management interface</b></li>
+	<p>The salt engine generates encrypted shareable salt files. The engine can be used as a stand-alone utility or coupled with a web interface. The web interface enables project managers to create projects, add users and authenticate users. Authenticated users upload their RSA public keys [1] and download the asymmetric encrypted salt file.
+	Language: Java</p>
+	 
+	<li><b>Data Standardization, exceptions, and hashing</b></li>
+
+	<p>This module includes a data pipeline to digest and validate data, standardize data, manage data exceptions, create composite identifiers from patient identifiers and hash using SHA512 [2] algorithm and the shared Salt
+
+	Language: Java, SQL-batch scripts</p>
+
+	 
+	<li><b>Disambiguation / matching</b></li>
+
+	<p>This module allows the aggregator to merge files, disambiguate the hashes and assign master (global) patient ID to matching patients
+	Language: Java, SQL-batch scripts</p>
+	</ol>
+</div>
 </body>
 </html>
-
-    
