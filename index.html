@@ -9,8 +9,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Description -->
+      <meta name="description" content="We are excited to bring the open source patient data linkage tools.">
+	  <style>
+	  
+		li 		{
+					line-height: 150%;
+				}
+		
+		h1		{
+					font-size: 72pt;
+					font-family: Calibri;
+					line-height: 10%; <!--stops page title from having so much top and bottom padding-->
+				}
+	  
+		body	{
+					background-image: url("city1.jpg");
+					background-repeat: no-repeat;
+					background-position: right top;
+					background-attachment: fixed;
+					background-size: 100% 100%;
+					font-size: 100%;
+				}
+		
+		div		{
+					background-color: white;
+					opacity: 0.95;
+					padding: 1%;
+					margin: 2%;
+					font-family: Arial;
+					font-size: 1em;
+				}
+		.orangeboxholder	{
+								max-width: 100%;
+								margin: auto;
+								text-align: center;
+							}
+		.orangebox { 
+					  margin: auto;
+					  display: inline-block;
+					  background-color: gold;
+					  width: 25%;
+					  padding: 1%;
+					  margin: 1%;
+					  text-align: center;
+					  border: solid darkorange 2px;
+					  border-radius: 7px;
+					  font-family: Arial;
+					  font-size: 1.125em;
+					  font-weight: bold;
+					}
+		
+		.midbox		{
+						border: solid grey 4px;
+						border-radius: 7px;
+						background-color: gainsboro;
+						padding: 0% 1% 0% 1%;
+						margin: 0%;
+					}
+		
+ 
+	  </style>
+  </head>
+</html>
 
+<html>
+<body>
+<div>
+	<h1>Linkja</h1>
+
+	Privacy Preserving Record Linkage: Linkja<br>
 	<p>Linkja is designed to uniformly de-identify patients and securely link them across sites e.g., health systems, public health records, criminal justice system etc. without exposing underlying PHI. It is open source and available under General Public License. There are 3 main modules:</p>
+	
+	<!-- ORIGINAL LIST BELOW
+	<ol>
+		<li>Salt engine</li>
+		<li>Data Standardization, exceptions, and hashing</li>
+		<li>Disambiguation / matching</li>
+	</ol>
+	-->
+
+	<div class="orangeboxholder">
+		<div class="orangebox">Salt engine</div>
+		<div class="orangebox">Data Standardization, exceptions, and hashing</div>
+		<div class="orangebox">Disambiguation / matching</div>
+	</div>
 
 	<ol>
 	<li><b>Salt engine and project, user and key management interface</b></li>
