@@ -9,7 +9,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Description -->
+      <meta name="description" <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>PPRL GitHub | Open Source Privacy Preserving Record Linkage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Description -->
       <meta name="description" content="We are excited to bring the open source patient data linkage tools.">
+
+	<link rel="stylesheet" type="text/css" href="linkja_style.css">
+
+  </head>
+</html>
+
+<html>
+<body>
+<div>
+	<div class="orangeboxholder">
+		<a href="https://linkja.github.io"><div class="orangebox">Home</div></a>
+		<a href="https://github.com/linkja/salt-engine"><div class="orangebox">Salt Engine</div></a>
+		<a href="https://github.com/linkja/linkja-hashing"><div class="orangebox">De-identification</div></a>
+		<a href="https://github.com/linkja/linkja-disambiguate"><div class="orangebox">Disambiguation</div></a>
+		<a href=""><div class="orangebox">Acknowledgements</div></a>
+	</div>
+	
+	<h1>Linkja</h1>
+	
+	<p>Linkja is a privacy preserving record linkage system designed to uniformly de-identify patients and securely link them across sites e.g., health systems, public health records, criminal justice system etc. without exposing underlying PHI. It is open source and available under General Public License. There are 3 main modules:</p>
+
+
+	<ol>
+		<li><b>Salt engine and project, user and key management interface</b></li>
+		<p>The salt engine generates encrypted shareable salt files. The engine can be used as a stand-alone utility or coupled with a web interface. The web interface enables project managers to create projects, add users and authenticate users. Authenticated users upload their RSA public keys  and download the asymmetric encrypted salt file.
+		<br>Language: <a href="https://github.com/linkja/salt-engine">Java</a></p>
+		 
+		<li><b>De-identification: Data standardization, exclusion, and hashing</b></li>
+
+		<p>This module includes a data pipeline to digest and validate data, standardize data, manage data exclusions, create composite identifiers from patient identifiers, and hash them using SHA512  algorithm and the shared Salt.
+		<br>Language: <a href="https://github.com/linkja/linkja-hashing">Java</a>, <a href="https://github.com/linkja/SQL-hashing">SQL-batch scripts</a></p>
+
+		 
+		<li><b>Disambiguation </b></li>
+
+		<p>This module allows the aggregator to merge files, disambiguate the hashes and assign master (global) patient ID to matched and non-matched patients using deterministic algorithms.
+		<br>Language:<a href="https://github.com/linkja/linkja-disambiguate">Java (with SQLite)</a></p>
+	</ol>
+
+<p>Each module is available as a separate tool in multiple formats and can be used independently as long as the inputs for each module meet the general requirements.</p>
+
+<p>The concept and codes are culmination of years of efforts and contributions by several individuals: 
+    <br>William Trick, MD, Principal Investigator, Cook County Health
+	<br>Abel Kho, MD, Principal Investigator, Northwestern University
+	<br>Francisco Angulo, MBA, Technical Director, Cook County Health
+	<br>Kruti Doshi, MBA, Project Lead and Co-developer, Cook County Health
+	<br>Luke Rasmussen, MS, Lead Developer, Northwestern University
+</p>
+
+For a full list of contributors, please see our <a href="https://github.com/linkja/linkja-disambiguate">Acknowledgements</a> page::
+
+</div>
+</body>
+</html>
+content="We are excited to bring the open source patient data linkage tools.">
 	  <style>
 	  
 		li 		{
