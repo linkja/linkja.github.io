@@ -9,22 +9,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Description -->
-      <meta name="description" content="We are excited to bring the open source patient data linkage tools.">
+    <meta name="description" content="We are excited to bring the open source patient data linkage tools.">
 
+	<!-- DOING CSS INLINE UNTIL CAN FIND A WAY TO MAKE EXTERNAL STYLE SHEET WORK ON GITHUB
 	<link rel="stylesheet" type="text/css" href="linkja_style.css">
+	-->
+	<style>
+		
+		h1	{
+				font-size: 6em;
+				font-family: Calibri, Arial, sans-serif;
+				line-height: 10%; <!--stops page title from having so much top and bottom padding-->
+			}
+		
+		a	{
+				text-decoration:none;
+			}
+		
+		.page	{
+					padding: 1%;
+					margin: 0% 15% 0% 15%;
+					font-family: Verdana, Arial, sans-serif;
+					font-size: 1.25em;
+					line-height: 1.5;
+				}
+				
+		.menulinks	{ 	
+						color: white;
+						text-decoration: none;
+					}
+		
+		.sitemenuholder		{
+								max-width: 100%;
+								margin: -1% 0% 0% 0%;
+								/*border: 1px solid black;*/
+								text-align: right;
+							}
+		.sitemenu 	{ 
+						margin: auto;
+						display: inline-block;
+						background-color: darkblue;
+						width: 160px;
+						height: 1em;
+						padding: 0.5% 1% 1% 1%;
+						margin: 0.5%;
+						text-align: center;
+						border: solid darkblue 2px;
+						border-radius: 7px;
+						font-family: Verdana, Arial, sans-serif;
+						font-size: 1em;
+						font-weight: normal;
+					}
+		
+		#menufont	{
+						font-size: .75em;
+					}
+		
+		.sections	{
+						border-style: none solid none solid;
+						border-color: grey;
+						border-radius: 7px;
+						padding: .5% .5% .5% .5%;
+					}
+		
+		.ack	{
+					border: solid grey 4px;
+					border-radius: 7px;
+					background-color: gainsboro;
+					padding: 0% 1% 1% 2%;
+					margin: 0%;
+				}
+	</style>
 
   </head>
 </html>
 
 <html>
 <body>
-<div>
-	<div class="orangeboxholder">
-		<a href="https://linkja.github.io"><div class="orangebox">Home</div></a>
-		<a href="https://github.com/linkja/salt-engine"><div class="orangebox">Salt Engine</div></a>
-		<a href="https://github.com/linkja/linkja-hashing"><div class="orangebox">De-identification</div></a>
-		<a href="https://github.com/linkja/linkja-disambiguate"><div class="orangebox">Disambiguation</div></a>
-		<a href=""><div class="orangebox">Acknowledgements</div></a>
+<div class="page">
+	<div class="sitemenuholder">
+		<a id="menufont" class="menulinks" href="https://linkja.github.io"><div class="sitemenu">Home</div></a>
+		<a id="menufont" class="menulinks" href="#salt"><div class="sitemenu">Salt Engine</div></a>
+		<a id="menufont" class="menulinks" href="#de-id"><div class="sitemenu">De-identification</div></a>
+		<a id="menufont" class="menulinks" href="#disam"><div class="sitemenu">Disambiguation</div></a>
+		<a id="menufont" class="menulinks" href="acknowledgements.html"><div class="sitemenu">Acknowledgements</div></a>
 	</div>
 	
 	<h1>Linkja</h1>
