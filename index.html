@@ -18,13 +18,17 @@
 		
 		h1	{
 				font-size: 5em;
-				font-family: Calibri, Arial, sans-serif;
+				font-family: 'Script MT Bold', sans-serif;
 				line-height: 10%; <!--stops page title from having so much top and bottom padding-->
 			}
 		
 		a	{
 				text-decoration:none;
 			}
+		
+		.logoimage	{
+						
+					}
 		
 		.page	{
 					padding: 1%;
@@ -96,7 +100,8 @@
 	</div>
 	
 	<div>
-		<h1>Linkja</h1>
+		<!--<h1>Linkja</h1> 	-->
+		<a href="https://linkja.github.io"><img src="Linkja_logo.gif" alt="Linkja logo" width="318"></a>
 	</div>
 	
 	<p>Linkja is a privacy preserving record linkage system designed to uniformly de-identify patients and securely link them across sites e.g., health systems, public health records, criminal justice system etc. without exposing underlying PHI. It is open source and available under General Public License. It is comprised of three modules: the salt engine, de-identification, and disambiguation.</p>
@@ -118,7 +123,7 @@
 		<div>
 			<b id="disam">Disambiguation</b>
 			<p>This module allows the aggregator to merge files, disambiguate the hashes, and assign a master (global) patient ID to matched and non-matched patients using deterministic algorithms.
-			<br>Language: <a href="https://github.com/linkja/linkja-disambiguate">Java (with SQLite)</a></p>
+			<br>Language:<a href="https://github.com/linkja/linkja-disambiguate">Java (with SQLite)</a></p>
 		</div>
 		<br>
 
@@ -131,11 +136,9 @@
 			The concept and codes are the culmination of years of efforts and contributions by several individuals: 
 			
 			<br>William Trick, MD, Principal Investigator, Cook County Health
-			<br>Abel Kho, MD, Principal Investigator, Northwestern University
 			<br>Francisco Angulo, MBA, Technical Director, Cook County Health
 			<br>Kruti Doshi, MBA, Project Lead and Co-developer, Cook County Health
 			<br>Luke Rasmussen, MS, Lead Developer, Northwestern University
-			<br>Larry Lemmon, Java Developer
 		</p>
 
 For a full list of contributors, please see our <a href="acknowledgements.html">Acknowledgements</a> page.
